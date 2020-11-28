@@ -11,10 +11,9 @@ const IndexPage = () => (
 
     <form
       name="contact-form"
-      netlify
-      // method="post"
-      // data-netlify="true"
-      // data-netlify-honeypot="bot-field"
+      method="post"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
     >
       <div>
         <label htmlFor="name">Name</label>
