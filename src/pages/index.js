@@ -8,14 +8,43 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+
+    <form
+      name="contact-form"
+      netlify
+      // method="post"
+      // data-netlify="true"
+      // data-netlify-honeypot="bot-field"
+    >
+      <div>
+        <label htmlFor="name">Name</label>
+        <br />
+        <input
+          id="name"
+          name="name"
+          placeholder="Your name"
+          type="text"
+          required
+        />
+      </div>
+      <div>
+        <label htmlFor="email">Email</label>
+        <br />
+        <input
+          id="email"
+          name="email"
+          placeholder="Your email"
+          type="email"
+          required
+        />
+      </div>
+      <div>
+        <label htmlFor="message">Message</label>
+        <br />
+        <textarea id="message" name="message" />
+      </div>
+      <button type="submit">Send</button>
+    </form>
   </Layout>
 )
 
