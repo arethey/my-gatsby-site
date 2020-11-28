@@ -9,12 +9,8 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
 
-    <form
-      name="contact-form"
-      method="post"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
-    >
+    <form name="contact-form" method="post" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact-form"></input>
       <div>
         <label htmlFor="name">Name</label>
         <br />
