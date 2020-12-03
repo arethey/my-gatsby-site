@@ -1,21 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Prata&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+.title {
+  font-family: "Playfair Display SC", serif;
+}
+
+.bg-image {
+  width: 100%;
+  min-height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /* banner */
 .banner {
-  position: relative;
   width: 100%;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/banner.jpg);
+    url(../images/banner_sea.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-.banner h1 {
-  color: #ffe0b2;
+
+.room-card {
+  position: relative;
 }
-.banner .contact-action {
-  background-color: #ffe0b2;
-  color: black;
+.room-card__bottom-left {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  padding: 8px;
+  color: #fff;
 }
